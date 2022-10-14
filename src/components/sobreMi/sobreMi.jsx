@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 //JSX
 export default function SobreMi() {
   return (
-    <Container>
+    <Container id="sobre">
       <Wrapper>
         <Photo
           as={motion.div}

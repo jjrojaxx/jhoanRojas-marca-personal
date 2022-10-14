@@ -6,6 +6,8 @@ export const ContainerNav = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
+  position: fixed;
+  z-index: 20;
 `
 export const Wrapper = styled.div`
   max-width: 1040px;
@@ -87,21 +89,23 @@ export const MenuResposive = styled.div`
   @media screen and (max-width: 425px){
     width: 80%;
   }
-  span{
+  a{
     text-decoration: none;
+    color: var(--color-white);
+    width: 100%; 
     padding: 20px 0px;
-    font-size: 16px;
-    font-weight: 500;
     border-radius: 10px;
     transition: all 300ms;
-    a{
-      text-decoration: none;
-      color: var(--color-white);
-    }
     &:hover{
       background: #ffd50030;
       padding-left: 20px;
     }
+    span{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+
+  }
     
   }
   

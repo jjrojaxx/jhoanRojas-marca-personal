@@ -7,10 +7,11 @@ import {
   IconLogoMobile,
   MenuResposive,
   BtnMenuReponsive,
-  LogoReponsive
+  LogoReponsive,
 } from "./NavbarElements";
 import Logo from "../../assets/logo.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link as Scroll } from "react-scroll";
 
 export default function Navbar() {
   const [click, setClick] = useState(true);
@@ -29,10 +30,50 @@ export default function Navbar() {
             {click ? <FaBars /> : <FaTimes />}
           </IconLogoMobile>
           <ul>
-            <Menu>Sobre mi</Menu>
-            <Menu>Experiencia</Menu>
-            <Menu>Trabajos</Menu>
-            <BtnMenu>Contacto</BtnMenu>
+            <Scroll
+              className="sobre"
+              to="sobre"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={500}
+              activeClass="active"
+            >
+              <Menu>Sobre mi</Menu>
+            </Scroll>
+            <Scroll
+              className="sobre"
+              to="experiencia"
+              spy={true}
+              smooth={true}
+              offset={-0}
+              duration={500}
+              activeClass="active"
+            >
+              <Menu>Experiencia</Menu>
+            </Scroll>
+            <Scroll
+              className="sobre"
+              to="trabajos"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              activeClass="active"
+            >
+              <Menu>Trabajos</Menu>
+            </Scroll>
+            <Scroll
+              className="contacto"
+              to="conatact"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={500}
+              activeClass="active"
+            >
+              <BtnMenu>Contacto</BtnMenu>
+            </Scroll>
           </ul>
           <MenuResposive click={click}>
             <LogoReponsive>
@@ -40,10 +81,63 @@ export default function Navbar() {
                 <img src={Logo} alt="Jhoanrojas.com" />
               </a>
             </LogoReponsive>
-            <span onClick={() => ChangeClick()}><a href="/">Sobre mi</a></span>
-            <span onClick={() => ChangeClick()}><a href="/">Experiencia</a></span>
-            <span onClick={() => ChangeClick()}><a href="/">Trabajos</a></span>
-            <BtnMenuReponsive onClick={() => ChangeClick()}>Contacto</BtnMenuReponsive>
+            <Scroll
+                onClick={() => ChangeClick()}
+                className="sobre"
+                to="sobre"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+                activeClass="active"
+              >
+            <span >
+                Sobre mi
+            </span>
+              </Scroll>
+            <Scroll
+                onClick={() => ChangeClick()}
+                className="sobre"
+                to="experiencia"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+                activeClass="active"
+              >
+            <span>
+               Experiencia
+            </span>
+              </Scroll>
+            <Scroll
+                 onClick={() => ChangeClick()}
+                className="sobre"
+                to="trabajos"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+                activeClass="active"
+              >
+            <span>
+                Trabajos
+            </span>
+              </Scroll>
+    
+              <Scroll
+                 onClick={() => ChangeClick()}
+                className="sobre"
+                to="conatact"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+                activeClass="active"
+              >
+            <BtnMenuReponsive>
+              Contacto
+            </BtnMenuReponsive>
+            </Scroll>
           </MenuResposive>
         </nav>
       </Wrapper>
