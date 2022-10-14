@@ -76,12 +76,13 @@ export const MenuResposive = styled.div`
   position: absolute;
   top: 0;
   left: 0px;
-  background-color: var(--color-blue);
+  background-color: #183372ba;
   display: flex;
   flex-direction: column;
   height: 100vh;
   padding: 20px 16px;
   transition: all 300ms;
+  backdrop-filter: blur(8px);
   left: ${({click}) => (click ? '-400px' : 0 )};
   @media screen and (max-width: 425px){
     width: 80%;
