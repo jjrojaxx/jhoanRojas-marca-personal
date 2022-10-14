@@ -10,8 +10,8 @@ export default function Footer() {
       <Wrapper>
         <Copy>
           2022 <a href="/">jhoanrojas.com</a> Todos los derechos reservados.
-          Realizado por{" "}
-          <a href="https:lealjoseph.com" target="Blank">
+          Realizado por
+          <a href="https://lealjoseph.com" target="Blank">
             Joseph Leal
           </a>
         </Copy>
