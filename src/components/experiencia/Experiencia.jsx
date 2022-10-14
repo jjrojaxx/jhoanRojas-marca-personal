@@ -1,7 +1,7 @@
 //IMPORTACIONES
 import React from "react"
 import {ContainerBlue, WrapperCenter, SubtitleWhite, ColTwoCenter, TitleCenter} from "../GloblalElements"
-import {Theree, AñosCaja, AñosU, AñosT, AñosTH, AñosF, Line, 
+import {Theree, Caja, CajaU, CajaT, CajaTH, CajaF, Line, 
     Punto, 
     Punto2, 
     Punto3, 
@@ -18,21 +18,21 @@ export default function Experiencia() {
                 <TitleCenter>Experiencia Laboral</TitleCenter>
                  <Theree>
                     <div>
-                        <AñosCaja>
+                        <Caja>
                             2015 - 2016
-                        </AñosCaja>
-                        <AñosU>
+                        </Caja>
+                        <CajaU>
                             2015 - 2016
-                        </AñosU>
-                        <AñosT>
+                        </CajaU>
+                        <CajaT>
                             2015 - 2016
-                        </AñosT>
-                        <AñosTH>
+                        </CajaT>
+                        <CajaTH>
                             2015 - 2016
-                        </AñosTH>
-                        <AñosF>
+                        </CajaTH>
+                        <CajaF>
                             2015 - 2016
-                        </AñosF>
+                        </CajaF>
                     </div> 
 
                     <div>

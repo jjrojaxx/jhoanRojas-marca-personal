@@ -7,7 +7,7 @@ export const Theree = styled.div`
   display: flex;
   justify-content: space-between;
 `
-export const AñosCaja = styled.div `
+export const Caja = styled.div `
   padding: 15px 20px;
   border: 1px solid #B8B8B8;  
   color: #B8B8B8; 
@@ -22,7 +22,7 @@ export const AñosCaja = styled.div `
   }
 
 `
-export const AñosU = styled.div `
+export const CajaU = styled.div `
   padding: 15px 20px;
   border: 1px solid #B8B8B8;  
   color: #B8B8B8; 
@@ -37,7 +37,7 @@ export const AñosU = styled.div `
     display: none;
   }
 `
-export const AñosT = styled.div `
+export const CajaT = styled.div `
   padding: 15px 20px;
   border: 1px solid #B8B8B8;  
   color: #B8B8B8; 
@@ -52,7 +52,7 @@ export const AñosT = styled.div `
     display: none;
   }
 `
-export const AñosTH = styled.div `
+export const CajaTH = styled.div `
   padding: 15px 20px;
   border: 1px solid #B8B8B8;  
   color: #B8B8B8; 
@@ -66,7 +66,7 @@ export const AñosTH = styled.div `
     display: none;
   }
 `
-export const AñosF = styled.div `
+export const CajaF = styled.div `
   padding: 15px 20px;
   border: 1px solid #B8B8B8;  
   color: #B8B8B8; 
